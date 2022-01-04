@@ -52,7 +52,7 @@
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                     <!--工程名-->
-                    <finalName>${project.name}</finalName>
+                    <finalName>myTest</finalName>
                 </configuration>
                 <executions>
                     <execution>

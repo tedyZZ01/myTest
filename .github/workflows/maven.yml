@@ -3,7 +3,13 @@
 name: Java CI with Maven
 
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # Run at 12:00 on working days
+    - cron: 0 * * * *
 
 jobs:
   build:

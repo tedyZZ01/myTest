@@ -41,7 +41,7 @@ public class Rate {
 
             @Override
             public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
-                System.out.println(response.body().string());
+              
                 getfeedback(response.body().string());
             }
         });

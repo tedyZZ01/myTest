@@ -30,5 +30,5 @@ jobs:
       run: |
          git config --local user.email "tedyxing51@sina.com"
          git config --local user.name "tedyZZ01"
-         git add rate.json
+         git add README.md
          git commit -m "update rate.json"

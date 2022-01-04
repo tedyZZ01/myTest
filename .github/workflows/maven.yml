@@ -16,6 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+    - name: Commit files
+      run: |
+         git config --local user.email "tedyxing51@sina.com"
+         git config --local user.name "tedyZZ01"
+         git add rate.json
+         git commit -m "update rate.json"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:

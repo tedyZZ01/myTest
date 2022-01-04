@@ -7,6 +7,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
@@ -50,8 +51,13 @@ public class Rate {
 
     private static void getfeedback(String string) throws IOException {
         Path readmePath = Paths.get("README.md");
+        /*
         FileWriter fw = new FileWriter(readmePath);
         fw.write(string);
         fw.close();
+        */
+
+        Files.write(readmePath,string.getBytes());
+
     }
 }

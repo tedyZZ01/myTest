@@ -13,8 +13,4 @@ jobs:
     name: Validate links
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Validate links
-      uses: ad-m/report-link-action@master
-      with:
-        github_token: ${{ secrets.MY_GIT_TOKEN }}
+     - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."

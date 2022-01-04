@@ -50,7 +50,7 @@ public class Rate {
     }
 
     private static void getfeedback(String string) throws IOException {
-        Path readmePath = Paths.get("README.md");
+        Path readmePath = Paths.get("rate.json");
         /*
         FileWriter fw = new FileWriter(readmePath);
         fw.write(string);

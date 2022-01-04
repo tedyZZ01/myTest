@@ -3,15 +3,10 @@
 name: Java CI with Maven
 
 
-on:[push]
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-         github_token: ${{ secrets.MY_GIT_TOKEN }}
-         branch: main

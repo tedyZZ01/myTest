@@ -12,3 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+    env:
+       GITHUB_TOKEN: ${{ secrets.MY_GIT_TOKEN }}

@@ -24,3 +24,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Run Java Application
+      run: java -jar target/myTest-jar-with-dependencies.jar
+    - name: Commit files
+      run: |
+         git config --local user.email "tedyxing51@sina.com"
+         git config --local user.name "tedyZZ01"
+         git add rate.json
+         git commit -m "update rate.json"

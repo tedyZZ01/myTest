@@ -12,7 +12,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 public class Rate {
-    private static String BING_URL = "https://openexchangerates.org/api/latest.json?app_id=0651d700b381490f81db74e3a62cc029";
+    private static String BING_URL = "";
 
 
 
